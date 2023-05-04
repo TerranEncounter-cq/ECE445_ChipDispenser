@@ -248,3 +248,23 @@ The laser test was conducted with varying test sizes. The accuracy percentage in
 ## Group meeting - 04/17 - 04/21
 - Conducted Mock Demo.
 - Prepared for Final Demo.
+
+---
+
+## Project Summary
+About the performance of the design:
+- Mechanical issue exists for chip dispensing, though the accuracy achieved the accuracy (90%) in high-level-requirement.
+- Chip Counter needs further improvement since it does not achieved the accruracy (98%) in high-level-requirement.
+- Laser module in Chip Counter could be replaced by a sensitive weight scale
+- Baatery can sustain 20 rounds of dispensing processes, which means we achieved the high-level-requirement.
+- To sum up, the project generally works fine though we need improvement on the Chip Counter. 
+
+What we have learned:
+- Use of Arduino board
+- Interaction with sensors
+- PCB board design
+- Mechanical part in reality
+- Project team working experience
+
+I appreciate all the support and help along the way! I'd like to thank Prof Gruev, our TA Raman Singh, other TAs that helped us, machine shop.
+This is the end of the notebook. 

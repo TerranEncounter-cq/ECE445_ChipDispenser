@@ -247,7 +247,7 @@ The laser test was conducted with varying test sizes. The accuracy percentage in
 - For the 30-chip test, the average accuracy was 72.5%.
 - For the 40-chip test, the average accuracy was 71.4%.
 
-### The results of these tests provide valuable data for our ongoing efforts to improve the accuracy and reliability of the "Chip Dispenser" system. It's clear that we still have some work to do, particularly in improving the accuracy of the laser test and the double chip test for larger quantities of chips. However, these results are promising, and we are confident in our ability to meet these challenges and refine our system.
+#### The results of these tests provide valuable data for our ongoing efforts to improve the accuracy and reliability of the "Chip Dispenser" system. It's clear that we still have some work to do, particularly in improving the accuracy of the laser test and the double chip test for larger quantities of chips. However, these results are promising, and we are confident in our ability to meet these challenges and refine our system.
 ---
 
 ## Group meeting - 04/17 - 04/21

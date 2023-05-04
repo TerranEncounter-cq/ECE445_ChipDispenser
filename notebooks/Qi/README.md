@@ -11,11 +11,11 @@ To delve deeper into the functionality of our chip storage system and to brainst
 ### Work Completed
 We first focused on our chip storage system, discussing its two primary functions:
 1. **Take out:** The system should be able to read component requests from the user terminal and dispense the requested chips.
-2. **Store:** The system should be able to accept incoming chips, recognize them, and store them in their designated slots.
+2. **Store:** Each slot will hold one specific type of chip in the tube. For example, slot #1 will hold chip HCF4072B, and slot #2 will hold chip SN74ALS21. Presumably, the chips are placed in the original tube and are already segregated.
 
 We identified text recognition as a potential challenge in this process, considering the cost implications of implementing a camera for this purpose.
 
-In the spirit of innovation, we also brainstormed a few other potential projects that could make use of similar technologies. These include:
+We brainstormed some similar Dispensers. These include:
 - **Dumpling Dispenser:** A machine that prepares and cooks dumplings upon the press of a button. Once cooked, a plate of ready-to-eat dumplings would be dispensed.
 - **Vegetable Multi-shape Auto Chopper:** A machine capable of chopping vegetables into various desired shapes (slice, dice, shred, mince).
 - **Curl Wire Straightening & Separating Machine:** A machine designed to straighten used wires and separate them based on length.
@@ -25,7 +25,7 @@ The visual aid and block diagram for this session was prepared by me to facilita
 ![Block Diagram](https://github.com/TerranEncounter-cq/ECE445_ChipDispenser/blob/main/notebooks/Qi/Block_Diagram%20V1%20(02_21).png)
 
 ### Reflections & Next Steps
-In today's session, we not only refined our understanding of the chip storage system but also explored the potential for similar technologies in different applications. Our next step will be to explore solutions to the text recognition problem in our chip storage system and to further develop the other project ideas.
+In today's session, we not only refined our understanding of the chip storage system but also explored the potential for similar technologies in different applications.
 
 ---
 
@@ -112,11 +112,11 @@ I also updated the block diagram and visual aid:
 Initially, we identified a problem in the process of sorting and distributing electronic chips for ECE classes. It was noted that this process is currently done manually by staff, which is both tedious and time-consuming. 
 
 #### Proposed Solution
-The proposed solution was to develop an automated system that could dispense chips as per the user's request. The user would simply input the desired list of chips on a number pad, and the system would dispense the corresponding chips from storage. An additional chip input function was proposed to be added if time allowed, which would involve the system identifying different chips and sorting them into separate slots.
+The proposed solution was to develop an automated system that could dispense chips as per the user's request. The user would simply input the desired list of chips on a number pad, and the system would dispense the corresponding chips from storage. An additional chip input function is to be added if time allowed, which would involve the system identifying different chips and sorting them into separate slots.
 
 #### High-level Requirements
-1. After the user selects the desired chips, the system should dispense the correct number of specified chips with at least 90% accuracy during 10 consecutive dispensing processes, provided the storage tubes are not empty. It was noted that the system should be able to dispense single chips.
-2. The system should accurately inform the user about the remaining number of each type of chip with 98% accuracy. It should also update the user on the current state of the system (input mode, output mode, or halt) with 98% accuracy.
+1. After the user selects the desired chips, the system should dispense the correct number of specified chips with at least 90% accuracy during 10 consecutive dispensing processes, provided the storage tubes are not empty.
+2. The system should be able to hint to the user about the number of remaining chips for all three types of chips with 98% accuracy; the system should also hint to the user about the current state of the system with 98% accuracy (input mode, output mode, or halt).  
 3. The battery capacity should be sufficient to sustain at least 20 dispensing processes with all system components functioning correctly.
 
 This first part of the design document provided a clear problem statement and a detailed proposal for a solution, as well as specifying high-level requirements for the system. This was accompanied by relevant visual aids and tables for clarity.
@@ -124,40 +124,34 @@ This first part of the design document provided a clear problem statement and a 
 ### Subsystem Descriptions and Changes
 
 #### Subsystem 1: Storage subsystem
-The storage subsystem was designed to hold specific types of chips in individual slots. The storage system was also equipped with a chip counter that displays the number of remaining chips in each tube on a Liquid Crystal Display (LCD). A laser transmitter and receiver were proposed to detect when a chip was dispensed, with the count decreasing by one for each dispensed chip. A manual reset functionality was proposed for when a new tube of chips is placed. 
+The storage subsystem was designed to hold specific types of chips in individual slots. The storage system was also equipped with a chip counter that displays the number of remaining chips in each tube on a Liquid Crystal Display (LCD). A laser transmitter and receiver were proposed to detect when a chip was dispensed, with the count decreasing by one for each dispensed chip. A manual reset functionality is for when a new tube of chips is placed. 
 
 #### Subsystem 2: Dispensing subsystem
-The dispensing subsystem was designed to dispense chips from storage, with a maximum of three types of chips managed by one Chip Dispensing Module (CDM). Each CDM was proposed to have a solenoid at the bottom that could push the bottom chip into a collection area.
+The dispensing subsystem was designed to dispense chips from storage, with a maximum of three types of chips managed by one Chip Dispensing Module (CDM). Each CDM should have a solenoid at the bottom that could push the bottom chip into a collection area.
 
 #### Subsystem 3: Power subsystem
-This subsystem was responsible for the power supply of the whole system. A 12V battery was proposed for the solenoid and a 5V battery for the rest of the system. A voltage regulator was proposed for the 5V battery to step down from 5V to 3.3V.
+This subsystem was responsible for the power supply of the whole system. A 12V battery for the solenoid and a 5V battery for the rest of the system. A voltage regulator was to step down from 5V to 3.3V from the battery.
 
 #### Subsystem 4: User terminal
-The user terminal was proposed as a number pad that could input the number of chips required. The user would be able to use a switch to select from input mode and output mode.
+The user terminal should be used as a number pad that could input the number of chips required. The user would be able to use a switch to select from input mode and output mode.
 
 #### Subsystem 5: Control subsystem
-The control subsystem was proposed to receive, process, and send signals to all other subsystems. A development board (Arduino) was proposed as the microprocessor. This subsystem would handle data from each CDM to monitor remaining chips and send control signals to each solenoid to dispense chips and handle input from the number pad.
+The control subsystem is to receive, process, and send signals to all other subsystems. A development board (Arduino) is used as the microprocessor. This subsystem would handle data from each CDM to monitor remaining chips and send control signals to each solenoid to dispense chips and handle input from the number pad.
 
-#### [Additional] Subsystem 1: Chip delivery system
-This subsystem was proposed to accept a sequence (in-line) of different chips and output them one by one for the scanner to use by using a solenoid. This was an additional system that would only be built after the previous four subsystems had been implemented and tested thoroughly.
-
-#### [Additional] Subsystem 2: Chip identification subsystem
-This subsystem was proposed to have a barcode scanner to identify the chip and inform the controller of the chip ID. The scanning area would have at most one chip at a time, and the chip would need to be placed at a proper angle to the scanner. Like the Chip delivery system, this was an additional system that would only be built after the previous four subsystems had been implemented and tested thoroughly.
-
-#### Cost Analysis and Schedule 
+#### We also discussed Cost Analysis and Schedule 
 
 ---
 
 ## Group meeting - 02/27 - 03/03
-- Initiated order for parts required for prototyping.
-- Conducted testing of laser parts in hand.
-- Started the design process for the PCB.
+- Order parts required for prototyping.
+- Testing of laser parts in hand.
+- Started to design the PCB.
 
 ---
 
 ## PCB Design Record - 03/08
 
-Completed the design and schematics of a working Printed Circuit Board (PCB). The PCB has been designed to effectively connect and manage all the required components for the project. I was responsible for this critical task, using my knowledge of electrical circuits and design software to create a functional and efficient PCB layout.
+Using my expertise in electrical circuitry and design software, I successfully crafted the blueprint for a functional Printed Circuit Board (PCB). The PCB expertly connects and regulates all the necessary project components. My pivotal role in this project involved the intricate design and precise schematics of this crucial component.
 
 
 ---
@@ -230,24 +224,23 @@ We conducted several tests using the solenoid system, including single chip test
 
 ![Solenoid Test](https://github.com/TerranEncounter-cq/ECE445_ChipDispenser/blob/main/notebooks/Qi/Solenoid%20test%20(360%20chips).png)
 #### Single Chip Test
-- For the 20-chip test, the average accuracy was 97.2%.
-- For the 30-chip test, the average accuracy was 96.1%.
-- For the 40-chip test, the average accuracy was 88.1%.
+- For single chip dispension, the average accuracy was 97.2%.
+- For double chip dispension, the average accuracy was 96.1%.
+- For triple chip dispension, the average accuracy was 88.1%.
 
 #### Double Chip Test
-- For the 20-chip test, the average accuracy was 94.4%.
-- For the 30-chip test, the average accuracy was 92.7%.
-- For the 40-chip test, the average accuracy was 87.8%.
+- For single chip dispension, the average accuracy was 94.4%.
+- For double chip dispension, the average accuracy was 92.7%.
+- For triple chip dispension, the average accuracy was 87.8%.
 
 ### Laser Test
 The laser test was conducted with varying test sizes. The accuracy percentage indicates the success rate in identifying the correct number of chips.
 
 ![Laser Test](https://github.com/TerranEncounter-cq/ECE445_ChipDispenser/blob/main/notebooks/Qi/Laser%20test%20(360%20chips).png)
-- For the 20-chip test, the average accuracy was 72.5%.
-- For the 30-chip test, the average accuracy was 72.5%.
-- For the 40-chip test, the average accuracy was 71.4%.
+- For test size 20, the average accuracy was 72.5%.
+- For test size 30, the average accuracy was 72.5%.
+- For test size 40, the average accuracy was 71.4%.
 
-#### The results of these tests provide valuable data for our ongoing efforts to improve the accuracy and reliability of the "Chip Dispenser" system. It's clear that we still have some work to do, particularly in improving the accuracy of the laser test and the double chip test for larger quantities of chips. However, these results are promising, and we are confident in our ability to meet these challenges and refine our system.
 ---
 
 ## Group meeting - 04/17 - 04/21

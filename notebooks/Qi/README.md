@@ -22,6 +22,7 @@ In the spirit of innovation, we also brainstormed a few other potential projects
 
 The visual aid and block diagram for this session was prepared by me to facilitate our discussion and illustrate our ideas better. I led the meeting, ensuring that we stayed on topic and reached our objectives for the day.
 
+![Visual Aid](https://github.com/TerranEncounter-cq/ECE445_ChipDispenser/blob/main/notebooks/Qi/Visual_Aid%20V1(02_07).pdf)
 ![Block Diagram](https://github.com/TerranEncounter-cq/ECE445_ChipDispenser/blob/main/notebooks/Qi/Block_Diagram%20V1%20(02_21).png)
 
 ### Reflections & Next Steps

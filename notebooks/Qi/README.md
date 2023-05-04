@@ -228,7 +228,7 @@ This week, I conducted comprehensive tests on the solenoids and lasers, using a 
 ### Solenoid Test
 We conducted several tests using the solenoid system, including single chip tests and double chip tests, with varying quantities of chips in the tubes.
 
-![Solenoid Test](https://github.com/TerranEncounter-cq/ECE445_ChipDispenser/blob/main/notebooks/Qi/Laser%20test%20(360%20chips))
+![Solenoid Test](https://github.com/TerranEncounter-cq/ECE445_ChipDispenser/blob/main/notebooks/Qi/Solenoid%20test%20(360%20chips).png)
 #### Single Chip Test
 - For the 20-chip test, the average accuracy was 97.2%.
 - For the 30-chip test, the average accuracy was 96.1%.
@@ -242,7 +242,7 @@ We conducted several tests using the solenoid system, including single chip test
 ### Laser Test
 The laser test was conducted with varying test sizes. The accuracy percentage indicates the success rate in identifying the correct number of chips.
 
-![Laser Test](https://github.com/TerranEncounter-cq/ECE445_ChipDispenser/blob/main/notebooks/Qi/Solenoid%20test%20(360%20chips).png)
+![Laser Test](https://github.com/TerranEncounter-cq/ECE445_ChipDispenser/blob/main/notebooks/Qi/Laser%20test%20(360%20chips))
 - For the 20-chip test, the average accuracy was 72.5%.
 - For the 30-chip test, the average accuracy was 72.5%.
 - For the 40-chip test, the average accuracy was 71.4%.

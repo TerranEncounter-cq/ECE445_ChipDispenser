@@ -153,7 +153,9 @@ The control subsystem is to receive, process, and send signals to all other subs
 
 Using my expertise in electrical circuitry and design software, I successfully crafted the blueprint for a functional Printed Circuit Board (PCB). The PCB expertly connects and regulates all the necessary project components. My pivotal role in this project involved the intricate design and precise schematics of this crucial component.
 
-
+Here are the PCB design and schematics:
+![PCB](https://github.com/TerranEncounter-cq/ECE445_ChipDispenser/blob/main/notebooks/Qi/PCB_design-1.png)
+![Schematics](https://github.com/TerranEncounter-cq/ECE445_ChipDispenser/blob/main/notebooks/Qi/Schematics-1.png)
 ---
 
 ## Group meeting - 03/06 - 03/10

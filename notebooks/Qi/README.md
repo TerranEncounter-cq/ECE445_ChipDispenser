@@ -22,7 +22,6 @@ In the spirit of innovation, we also brainstormed a few other potential projects
 
 The visual aid and block diagram for this session was prepared by me to facilitate our discussion and illustrate our ideas better. I led the meeting, ensuring that we stayed on topic and reached our objectives for the day.
 
-![Visual Aid](https://github.com/TerranEncounter-cq/ECE445_ChipDispenser/blob/main/notebooks/Qi/Visual_Aid%20V1(02_07).pdf)
 ![Block Diagram](https://github.com/TerranEncounter-cq/ECE445_ChipDispenser/blob/main/notebooks/Qi/Block_Diagram%20V1%20(02_21).png)
 
 ### Reflections & Next Steps
@@ -97,6 +96,10 @@ The majority of power consumption comes from the solenoid and number pad, with o
 ## Ethics and Safety
 Original design intended to aid in dispensing electronic components in ECE faculties, aiming to reduce repetitive work. Not designed for illegal use. Safe 12V power supply but caution needed to prevent objects from entering tubes, avoid injuries from the narrowly spaced mechanical parts, and prevent harm to eyes from the laser.
 
+I also updated the block diagram and visual aid:
+
+![Visual Aid](https://github.com/TerranEncounter-cq/ECE445_ChipDispenser/blob/main/notebooks/Qi/Visual_Aid V2(02-29).png)
+![Block Diagram](https://github.com/TerranEncounter-cq/ECE445_ChipDispenser/blob/main/notebooks/Qi/Block_Diagram V2 (03-31).png)
 ---
 
 # Design Document Update Record
@@ -197,7 +200,10 @@ I began assembling the Power subsystem and User terminal, carefully following th
 - Monitored the Power subsystem during operation.
 
 This week, I conducted comprehensive tests on the solenoids and lasers, using a total of 360 chips for each test to ensure their reliability and performance. The results will inform our next steps in refining these components.
+I also updated the block diagram and visual aid:
 
+![Visual Aid](https://github.com/TerranEncounter-cq/ECE445_ChipDispenser/blob/main/notebooks/Qi/Visual_Aid V3(03-31).png)
+![Block Diagram](https://github.com/TerranEncounter-cq/ECE445_ChipDispenser/blob/main/notebooks/Qi/Block_Diagram V3 (04_21).png)
 ---
 
 ## Group meeting - 04/10 - 04/14

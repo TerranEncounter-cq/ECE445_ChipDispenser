@@ -191,6 +191,20 @@ I began assembling the Power subsystem and User terminal, carefully following th
 - Implemented and tested Dispensing, User Terminal, Storage, and Power subsystems.
 - Continued refinement of design as needed.
 
+### Problems discussed
+
+We notice chip is not dispensing as expected:
+- The solenoid in the Chip Dispensing Module (CDM) was not always knocking out a single chip as intended. Sometimes, the solenoid action caused more than one chip to be dispensed or none at all.
+- To overcome this, we adjusted the solenoid's power and refined the timings for its activation and deactivation. After a series of tests, we found the optimal settings that ensured the solenoid dispensed only one chip at a time with high accuracy.
+
+We also notice the laser counting is incorrect sometimes:
+- The laser-based chip counting mechanism occasionally gave inaccurate readings. It sometimes missed counting a chip or counted a single chip twice, leading to incorrect data about the number of chips remaining in the storage.
+- We improved the laser sensor's mounting stability and adjusted its position for optimal detection. We also implemented a debounce algorithm in the control subsystem to prevent misreads due to sensor noise or fast-moving chips. This significantly improved the accuracy of the chip counting mechanism.
+
+We also notice the power supply issues
+- The power supply system initially had difficulty providing sufficient power to all subsystems during peak demand, such as when the solenoid and the scanner were operating simultaneously. This resulted in the system not functioning as expected.
+- To solve this issue, we added a high-capacity capacitor to the power supply circuit. This capacitor stores energy when the demand is low and provides extra power during peak demand. This modification ensured that all subsystems received sufficient power even during peak usage.
+
 ---
 
 ## Group meeting - 04/03 - 04/07
@@ -199,9 +213,7 @@ I began assembling the Power subsystem and User terminal, carefully following th
 - Finished Storage subsystem and conducted tests.
 - Monitored the Power subsystem during operation.
 
-This week, I conducted comprehensive tests on the solenoids and lasers, using a total of 360 chips for each test to ensure their reliability and performance. The results will inform our next steps in refining these components.
 I also updated the block diagram and visual aid:
-
 ![Visual Aid](https://github.com/TerranEncounter-cq/ECE445_ChipDispenser/blob/main/notebooks/Qi/Visual_Aid%20V3(03-31).png)
 ![Block Diagram](https://github.com/TerranEncounter-cq/ECE445_ChipDispenser/blob/main/notebooks/Qi/Block_Diagram%20V3%20(04_21).png)
 ---
@@ -212,6 +224,30 @@ I also updated the block diagram and visual aid:
 - Conducted final assembly and tests of subsystems 1-5.
 - Prepared for Mock Demo.
 
+This week, I conducted comprehensive tests on the solenoids and lasers, using a total of 360 chips for each test to ensure their reliability and performance. The results will inform our next steps in refining these components.
+### Solenoid Test
+We conducted several tests using the solenoid system, including single chip tests and double chip tests, with varying quantities of chips in the tubes.
+
+![Solenoid Test](https://github.com/TerranEncounter-cq/ECE445_ChipDispenser/blob/main/notebooks/Qi/Laser%20test%20(360 chips))
+#### Single Chip Test
+- For the 20-chip test, the average accuracy was 97.2%.
+- For the 30-chip test, the average accuracy was 96.1%.
+- For the 40-chip test, the average accuracy was 88.1%.
+
+#### Double Chip Test
+- For the 20-chip test, the average accuracy was 94.4%.
+- For the 30-chip test, the average accuracy was 92.7%.
+- For the 40-chip test, the average accuracy was 87.8%.
+
+### Laser Test
+The laser test was conducted with varying test sizes. The accuracy percentage indicates the success rate in identifying the correct number of chips.
+
+![Laser Test](https://github.com/TerranEncounter-cq/ECE445_ChipDispenser/blob/main/notebooks/Qi/Solenoid%20test%20(360 chips).png)
+- For the 20-chip test, the average accuracy was 72.5%.
+- For the 30-chip test, the average accuracy was 72.5%.
+- For the 40-chip test, the average accuracy was 71.4%.
+
+The results of these tests provide valuable data for our ongoing efforts to improve the accuracy and reliability of the "Chip Dispenser" system. It's clear that we still have some work to do, particularly in improving the accuracy of the laser test and the double chip test for larger quantities of chips. However, these results are promising, and we are confident in our ability to meet these challenges and refine our system.
 ---
 
 ## Group meeting - 04/17 - 04/21

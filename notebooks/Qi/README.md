@@ -20,6 +20,10 @@ In the spirit of innovation, we also brainstormed a few other potential projects
 - **Vegetable Multi-shape Auto Chopper:** A machine capable of chopping vegetables into various desired shapes (slice, dice, shred, mince).
 - **Curl Wire Straightening & Separating Machine:** A machine designed to straighten used wires and separate them based on length.
 
+The visual aid and block diagram for this session was prepared by me to facilitate our discussion and illustrate our ideas better. I led the meeting, ensuring that we stayed on topic and reached our objectives for the day.
+
+![Block Diagram](Block_Diagram_V1_(02_21).png)
+
 ### Reflections & Next Steps
 In today's session, we not only refined our understanding of the chip storage system but also explored the potential for similar technologies in different applications. Our next step will be to explore solutions to the text recognition problem in our chip storage system and to further develop the other project ideas.
 
@@ -41,6 +45,8 @@ As a team, we identified the need for an automated system that could handle the 
 7. Control system for managing the input and output processes
 
 The proposed system, in essence, aims to alleviate the labor-intensive and time-consuming process of chip distribution in large classes, while also enhancing accuracy.
+
+I took charge of the meeting to ensure that we stayed on track and worked effectively towards our goal of formulating a comprehensive design plan.
 
 ### Reflections & Next Steps
 Today's work resulted in a solid framework for our design project. The next steps will involve further development of each subsystem, starting with detailed design and part selection. It's important to remember that our success criterion involves the system's ability to correctly identify, store, and dispense chips, as well as form a regular bar shape in the storage system. We will also need to ensure that the system can handle a user-input mixture of chips and output specified chips in the correct numbers.
@@ -147,7 +153,8 @@ This subsystem was proposed to have a barcode scanner to identify the chip and i
 
 ## PCB Design Record - 03/08
 
-Completed the design and schematics of a working Printed Circuit Board (PCB). The PCB has been designed to effectively connect and manage all the required components for the project.
+Completed the design and schematics of a working Printed Circuit Board (PCB). The PCB has been designed to effectively connect and manage all the required components for the project. I was responsible for this critical task, using my knowledge of electrical circuits and design software to create a functional and efficient PCB layout.
+
 
 ---
 
@@ -170,6 +177,8 @@ Completed the design and schematics of a working Printed Circuit Board (PCB). Th
 - Started work on the Dispensing, User terminal, Actuation, and Power systems.
 - Conducted refinement of design as needed.
 
+I began assembling the Power subsystem and User terminal, carefully following the designs and making sure all components were correctly connected. I also started working on the Chip Dispensing Module, ensuring its mechanical parts were assembled correctly for efficient operation.
+
 ---
 
 ## Group meeting - 03/27 - 03/31
@@ -185,6 +194,8 @@ Completed the design and schematics of a working Printed Circuit Board (PCB). Th
 - Conducted tests on the User Terminal.
 - Finished Storage subsystem and conducted tests.
 - Monitored the Power subsystem during operation.
+
+This week, I conducted comprehensive tests on the solenoids and lasers, using a total of 360 chips for each test to ensure their reliability and performance. The results will inform our next steps in refining these components.
 
 ---
 

@@ -98,8 +98,8 @@ Original design intended to aid in dispensing electronic components in ECE facul
 
 I also updated the block diagram and visual aid:
 
-![Visual Aid](https://github.com/TerranEncounter-cq/ECE445_ChipDispenser/blob/main/notebooks/Qi/Visual_Aid V2(02-29).png)
-![Block Diagram](https://github.com/TerranEncounter-cq/ECE445_ChipDispenser/blob/main/notebooks/Qi/Block_Diagram V2 (03-31).png)
+![Visual Aid](https://github.com/TerranEncounter-cq/ECE445_ChipDispenser/blob/main/notebooks/Qi/Visual_Aid%20V2%20(02-29).png)
+![Block Diagram](https://github.com/TerranEncounter-cq/ECE445_ChipDispenser/blob/main/notebooks/Qi/Block_Diagram%20V2%20(03-31).png)
 ---
 
 # Design Document Update Record
@@ -202,8 +202,8 @@ I began assembling the Power subsystem and User terminal, carefully following th
 This week, I conducted comprehensive tests on the solenoids and lasers, using a total of 360 chips for each test to ensure their reliability and performance. The results will inform our next steps in refining these components.
 I also updated the block diagram and visual aid:
 
-![Visual Aid](https://github.com/TerranEncounter-cq/ECE445_ChipDispenser/blob/main/notebooks/Qi/Visual_Aid V3(03-31).png)
-![Block Diagram](https://github.com/TerranEncounter-cq/ECE445_ChipDispenser/blob/main/notebooks/Qi/Block_Diagram V3 (04_21).png)
+![Visual Aid](https://github.com/TerranEncounter-cq/ECE445_ChipDispenser/blob/main/notebooks/Qi/Visual_Aid%20V3%20(03-31).png)
+![Block Diagram](https://github.com/TerranEncounter-cq/ECE445_ChipDispenser/blob/main/notebooks/Qi/Block_Diagram%20V3%20(04_21).png)
 ---
 
 ## Group meeting - 04/10 - 04/14

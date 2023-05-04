@@ -22,7 +22,7 @@ In the spirit of innovation, we also brainstormed a few other potential projects
 
 The visual aid and block diagram for this session was prepared by me to facilitate our discussion and illustrate our ideas better. I led the meeting, ensuring that we stayed on topic and reached our objectives for the day.
 
-![Block Diagram](notebooks/Qi/Block_Diagram_V1_(02_21).png)
+![Block Diagram](ECE445_ChipDispenser/notebooks/Qi/Block_Diagram_V1_(02_21).png)
 
 ### Reflections & Next Steps
 In today's session, we not only refined our understanding of the chip storage system but also explored the potential for similar technologies in different applications. Our next step will be to explore solutions to the text recognition problem in our chip storage system and to further develop the other project ideas.
